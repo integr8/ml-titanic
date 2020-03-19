@@ -1,0 +1,1 @@
+docker run -tid -p 8888:8888 -e JUPYTER_ENABLE_LAB=yes --user root -e NB_UID=1000 -e NB_GID=1000 -e NB_USER=diego -e NB_GROUP=diego --name titanic -v $(pwd):/home/jovyan/work jupyter/datascience-notebook
